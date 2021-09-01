@@ -124,6 +124,24 @@ div.scrollmenu a:hover {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .img-background-four{
+    background-image: url("./assets/images/team/javier-murillo-img.png");
+    width: 50%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-content-four{
+    background-image: url("./assets/images/team/javier-murillo-texto1.png");
+    width: 50%;
+    height: 800px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
   
   
@@ -140,6 +158,11 @@ div.scrollmenu a:hover {
   
   #desktop-three{
     order: 3;
+    transition: opacity .3s;
+  }
+
+  #desktop-four{
+    order: 4;
     transition: opacity .3s;
   }
   

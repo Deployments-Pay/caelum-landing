@@ -14,6 +14,10 @@ let slide3 = document.getElementById("desktop-three");
 let imgThree = document.getElementById("img-three");
 let contentThree = document.getElementById("content-three");
 
+let slide4 = document.getElementById("desktop-four");
+let imgFour = document.getElementById("img-four");
+let contentFour = document.getElementById("content-four");
+
 let carousel = document.getElementById("slider-desktop");
 
 let counter = 1;
@@ -64,10 +68,31 @@ btnUp.addEventListener("click", () => {
       contentTwo.classList.remove("animate__fadeInUp");
     }, 1000);
   }
+
+
+
+  if (counter == 3) {
+    slide4.style.opacity = 0;
+    carousel.scrollBy(0, -840);
+
+    imgThree.classList.add("animate__fadeInDown");
+    contentThree.classList.add("animate__fadeInUp");
+
+    setTimeout(() => {
+      slide3.style.opacity = 1;
+    }, 500);
+
+    setTimeout(() => {
+      imgThree.classList.remove("animate__fadeInDown");
+      contentThree.classList.remove("animate__fadeInUp");
+    }, 1000);
+  }
+
+
 });
 
 btnDown.addEventListener("click", () => {
-  if (counter < 3) {
+  if (counter < 4) {
     counter++;
   } else {
     console.log("Deseable");
@@ -108,6 +133,27 @@ btnDown.addEventListener("click", () => {
       contentThree.classList.remove("animate__fadeInUp");
     }, 1000);
   }
+
+  if (counter == 4) {
+    carousel.scrollBy(0, 840);
+
+    slide2.style.opacity = 0;
+
+    imgFour.classList.add("animate__fadeInDown");
+    contentFour.classList.add("animate__fadeInUp");
+
+    setTimeout(() => {
+      slide4.style.opacity = 1;
+    }, 500);
+
+    setTimeout(() => {
+      imgFour.classList.remove("animate__fadeInDown");
+      contentFour.classList.remove("animate__fadeInUp");
+    }, 1000);
+  }
+
+
+
 });
 
 
