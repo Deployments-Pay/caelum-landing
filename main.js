@@ -33,9 +33,4 @@ addEventListener("scroll", () => {
         imgAbout.classList.remove("animate__fadeInRight")
     }
 
-    
-
-
-    console.log(scroll)
-
 })
