@@ -8,7 +8,6 @@ document.body.style.overflow = "hidden"
 
 
 addEventListener("DOMContentLoaded", () => {
-    console.log("Holaaa")
 
 
     setTimeout(() => {
